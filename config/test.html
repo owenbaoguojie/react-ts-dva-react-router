@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="id" />
+  </body>
+  <script>
+    const input = document.getElementById('id');
+    function getCurrentTime() {
+      const time = new Date();
+      
+      const year = time.getFullYear();
+      const month = time.getMonth()+1;
+      const day = time.getDay();
+      const hour = time.getHours();
+      const minute = time.getMinutes();
+      const second = time.getSeconds();
+      const currentTime = `${year}-${month}-${day}  ${hour}:${minute}:${second}`;
+
+      return currentTime;
+    }
+    input.value = getCurrentTime();
+  </script>
+</html>
