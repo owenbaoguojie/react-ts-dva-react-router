@@ -44,6 +44,10 @@ const Counter: React.SFC = () => {
   const { count } = useSelector((state: IGlobalStore) => state.count);
 
   const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   function incrementCount() {
     dispatch({ type: 'count/INCREASE_COUNT' });
