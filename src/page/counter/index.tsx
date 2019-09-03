@@ -39,6 +39,9 @@ import { IGlobalStore } from '@/shared/types/store';
 const Counter: React.SFC = () => {
   const { count } = useSelector((state: IGlobalStore) => state.count);
   const { count } = useSelector((state: IGlobalStore) => state.count);
+  const { count } = useSelector((state: IGlobalStore) => state.count);
+  const { count } = useSelector((state: IGlobalStore) => state.count);
+  const { count } = useSelector((state: IGlobalStore) => state.count);
 
   const dispatch = useDispatch();
 
